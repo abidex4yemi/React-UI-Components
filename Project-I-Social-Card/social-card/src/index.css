@@ -1,5 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+main,
+section {
+  display: block;
+}
+
 body {
   margin: 0;
   padding: 0.4rem;
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }

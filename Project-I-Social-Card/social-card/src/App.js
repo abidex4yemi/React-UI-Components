@@ -1,19 +1,25 @@
 import React from 'react';
 import './App.css';
-import { HeaderContent } from './components/HeaderComponents/HeaderContent';
-import { CardContent } from './components/CardComponents/CardContent';
-import { Footer } from './components/FooterComponents/Footer';
+import { SocialFeed } from './components/SocialFeed/SocialFeed';
 
 const App = () => {
 	return (
 		<React.Fragment>
-			<HeaderContent />
-			<main>
+			<header>
+				<h1>Welcome to Lambda React class</h1>
+			</header>
+			<main className="main-content">
 				<div className="container">
-					<CardContent />
+					<div className="social-cards">
+						<SocialFeed />
+						<SocialFeed />
+						<SocialFeed />
+					</div>
 				</div>
 			</main>
-			<Footer />
+			<footer>
+				<p>&copy; by Yemi</p>
+			</footer>
 		</React.Fragment>
 	);
 };
