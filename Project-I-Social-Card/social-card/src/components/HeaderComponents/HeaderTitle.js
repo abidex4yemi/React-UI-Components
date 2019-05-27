@@ -6,7 +6,9 @@ export const HeaderTitle = props => {
 	return (
 		<div className="intro-container">
 			<h1 className="heading">
-				Lambda School <span className="handle">{schoolName}</span>Time stamp<span />
+				Lambda School <span className="handle">{schoolName} </span>
+				<time className="date">26 jan</time>
+				<span />
 			</h1>
 			<p className="intro">
 				Let’s learn React by building simple interfaces with components, Don’t to overthink it, just keep it simple and
