@@ -1,0 +1,16 @@
+.card-footer {
+  padding: 1rem 2rem;
+  border-top: 1px solid #a0001e;
+}
+
+.icon-link {
+  display: inline-block;
+  margin: 0 2rem;
+  font-size: 2.5rem;
+  color: #343a40;
+  transition: .2s;
+}
+
+.icon-link:hover {
+  color: #a0001e;
+}
