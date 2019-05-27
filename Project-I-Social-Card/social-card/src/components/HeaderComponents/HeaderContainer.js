@@ -6,7 +6,7 @@ import { HeaderTitle } from './HeaderTitle';
 export const HeaderContainer = props => {
 	const { src, alt, schoolName } = props;
 	return (
-		<header>
+		<header className="main-header">
 			<ImageThumbnail src={src} alt={alt} />
 			<HeaderTitle schoolName={schoolName} />
 		</header>
