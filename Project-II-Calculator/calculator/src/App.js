@@ -10,6 +10,20 @@ export class App extends Component {
 		};
 	}
 
+	handleClick = evt => {
+		const value = evt.target.dataset.value;
+
+		switch (value) {
+			case value:
+				value.match(/^-{0,1}\d+$/);
+				console.log(value);
+				break;
+
+			default:
+				break;
+		}
+	};
+
 	render() {
 		const { total } = this.state;
 
@@ -23,7 +37,7 @@ export class App extends Component {
 
 				<main>
 					<div className="container">
-						<CalculatorDisplay total={total} />
+						<CalculatorDisplay total={total} handleClick={this.handleClick} />
 					</div>
 				</main>
 			</React.Fragment>

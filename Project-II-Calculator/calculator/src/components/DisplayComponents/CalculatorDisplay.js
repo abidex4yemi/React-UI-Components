@@ -50,33 +50,40 @@ export const CalculatorDisplay = props => {
 
 	const actionData = [
 		{
-			buttonText: '÷'
+			buttonText: '÷',
+			actionType: 'division'
 		},
 		{
-			buttonText: 'x'
+			buttonText: 'x',
+			actionType: 'multiplication'
 		},
 		{
-			buttonText: '-'
+			buttonText: '-',
+			actionType: 'subtraction'
 		},
 		{
-			buttonText: '+'
+			buttonText: '+',
+			actionType: 'addition'
 		},
 		{
-			buttonText: '='
+			buttonText: '=',
+			actionType: 'equals'
 		}
 	];
-	const { total } = props;
+	const { total, handleClick } = props;
 	return (
 		<div className="calculator">
 			<CalculatorScreen value="0" total={total} />
 			<div className="button-container">
 				<div className="left">
-					<ActionButton buttonText="clear" />
-					{digitData.map(button => <NumberButton key={button.buttonValue} {...button} />)}
+					<ActionButton buttonText="clear" actionType="clear" handleClick={handleClick} />
+					{digitData.map(button => <NumberButton handleClick={handleClick} key={button.buttonValue} {...button} />)}
 				</div>
 
 				<div className="right">
-					{actionData.map(actionBtn => <ActionButton key={actionData.length++} {...actionBtn} />)}
+					{actionData.map(actionBtn => (
+						<ActionButton key={actionData.length++} {...actionBtn} handleClick={handleClick} />
+					))}
 				</div>
 			</div>
 		</div>
