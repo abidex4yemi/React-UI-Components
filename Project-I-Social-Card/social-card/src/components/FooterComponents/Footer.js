@@ -28,6 +28,7 @@ export class Footer extends Component {
 						{' '}
 						{comment}
 					</i>
+
 					<i className="fas fa-retweet icon" onClick={() => this.handleClick('retweet')}>
 						{' '}
 						{retweet}
