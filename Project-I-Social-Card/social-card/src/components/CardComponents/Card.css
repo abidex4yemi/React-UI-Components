@@ -1,1 +1,67 @@
 /* All styles for your Card Components live here */
+/* Social feeds */
+.social-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-feed {
+  width: 48%;
+  margin-bottom: 50px;
+}
+
+.social-feed:nth-child(even) {
+  margin-left: auto;
+}
+
+.social-feed {
+  border: 1px solid #a0001e;
+  border-radius: 10px;
+}
+
+.card-header {
+  border-bottom: 1px solid #343a40;
+  padding: 2rem 3rem;
+}
+
+.card-banner {
+  display: block;
+  height: 300px;
+  width: 100%;
+  color: transparent;
+  background: url('https://tk-assets.lambdaschool.com/fcd75197-7d12-46ec-bc9e-4130f34822fa_reactbackground.png') no-repeat center/cover;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card-content .card-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-content .card-text {
+  font-size: 1.5rem;
+}
+
+.card-content a {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: white;
+  text-decoration: none;
+  background: #a0001e;
+  padding: 1em;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.2s;
+  border: 1px solid #a0001e;
+}
+
+.card-content a:hover {
+  color: #a0001e;
+  background: white;
+}
