@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { CalculatorDisplay } from './components/DisplayComponents/CalculatorDisplay';
 
 export class App extends Component {
 	constructor(props) {
@@ -10,21 +11,19 @@ export class App extends Component {
 	}
 
 	render() {
+		const { total } = this.state;
+
 		return (
 			<React.Fragment>
 				<header class="header">
 					<h3>Welcome to React Calculator</h3>
 				</header>
 
-				{/* <main>
+				<main>
 					<div className="container">
-						<div className="calculator">
-              <CalculatorDisplay />
-              <ActionButton />
-              <NumberButton />
-						</div>
+						<CalculatorDisplay total={total} />
 					</div>
-				</main> */}
+				</main>
 			</React.Fragment>
 		);
 	}

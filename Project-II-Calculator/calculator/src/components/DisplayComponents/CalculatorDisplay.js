@@ -3,5 +3,5 @@ import './Display.css';
 
 export const CalculatorDisplay = props => {
 	const { total } = props;
-	return <div className="display-value">{total}</div>;
+	return <div className="calculator">Display calculator {total}</div>;
 };
