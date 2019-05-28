@@ -44,3 +44,13 @@ body {
 .main-content {
   padding-top: 10rem;
 }
+
+.main-footer {
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.main-footer p {
+  padding: 2rem 0;
+  font-size: 1.8rem;
+}

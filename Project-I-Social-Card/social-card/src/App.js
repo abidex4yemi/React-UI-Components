@@ -26,9 +26,9 @@ const App = () => {
 					</div>
 				</div>
 			</main>
-			<footer>
+			<footer className="main-footer">
 				<div className="container">
-					<p>&copy; by Yemi</p>
+					<p>&copy; By Yemi</p>
 				</div>
 			</footer>
 		</React.Fragment>
