@@ -6,26 +6,39 @@ export class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			total: 0
+			total: 0,
+			value: ''
 		};
+	}
+
+	clearValue() {
+		this.setState(prevState => ({
+			value: prevState.total
+		}));
+	}
+
+	displayValue(inputValue) {
+		this.setState(prevState => ({
+			value: `${(prevState.value += inputValue)}`
+		}));
 	}
 
 	handleClick = evt => {
 		const value = evt.target.dataset.value;
 
 		switch (value) {
-			case value:
-				value.match(/^-{0,1}\d+$/);
-				console.log(value);
+			case 'clear':
+				this.clearValue();
 				break;
 
 			default:
+				this.displayValue(value);
 				break;
 		}
 	};
 
 	render() {
-		const { total } = this.state;
+		const { total, value } = this.state;
 
 		return (
 			<React.Fragment>
@@ -37,7 +50,7 @@ export class App extends Component {
 
 				<main>
 					<div className="container">
-						<CalculatorDisplay total={total} handleClick={this.handleClick} />
+						<CalculatorDisplay value={value} total={total} handleClick={this.handleClick} />
 					</div>
 				</main>
 			</React.Fragment>

@@ -45,35 +45,39 @@ export const CalculatorDisplay = props => {
 		{
 			buttonText: 0,
 			buttonValue: 0
+		},
+		{
+			buttonText: '.',
+			buttonValue: '.'
 		}
 	];
 
 	const actionData = [
 		{
 			buttonText: '÷',
-			actionType: 'division'
+			actionType: '÷'
 		},
 		{
 			buttonText: 'x',
-			actionType: 'multiplication'
+			actionType: 'x'
 		},
 		{
 			buttonText: '-',
-			actionType: 'subtraction'
+			actionType: '-'
 		},
 		{
 			buttonText: '+',
-			actionType: 'addition'
+			actionType: '+'
 		},
 		{
 			buttonText: '=',
-			actionType: 'equals'
+			actionType: '='
 		}
 	];
-	const { total, handleClick } = props;
+	const { handleClick, value } = props;
 	return (
 		<div className="calculator">
-			<CalculatorScreen value="0" total={total} />
+			<CalculatorScreen value={value} />
 			<div className="button-container">
 				<div className="left">
 					<ActionButton buttonText="clear" actionType="clear" handleClick={handleClick} />
