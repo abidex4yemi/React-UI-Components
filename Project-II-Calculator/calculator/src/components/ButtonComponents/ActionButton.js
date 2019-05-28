@@ -2,10 +2,10 @@ import React from 'react';
 import './Button.css';
 
 export const ActionButton = props => {
-	const { buttonStyle, buttonText, buttonContainerStyle } = props;
+	const { buttonStyle, buttonText, buttonValue } = props;
 	return (
-		<td className={buttonContainerStyle}>
-			<button className={buttonStyle}>{buttonText}</button>
-		</td>
+		<button style={buttonStyle} data-value={buttonValue}>
+			{buttonText}
+		</button>
 	);
 };
