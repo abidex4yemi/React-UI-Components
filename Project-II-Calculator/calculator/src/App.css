@@ -21,3 +21,18 @@ body {
 .header h1 {
   font-size: 2rem;
 }
+
+.btn {
+  border: 0;
+  border: 1px solid rgba(196, 192, 192, 0.363);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  cursor: pointer;
+  height: 70px;
+  outline: 0;
+  transition: .2s;
+}
+
+.btn:active {
+  transform: translateY(-6px);
+}

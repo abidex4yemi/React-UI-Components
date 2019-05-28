@@ -1,0 +1,27 @@
+.right .action-btn {
+  background: #A6032F;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.right .action-btn:hover {
+  background: rgb(185, 10, 57);
+}
+
+.left .action-btn {
+  width: 100%;
+}
+
+.left .digit-button {
+  width: 33.3%;
+}
+
+.left .digit-button:hover,
+.left .action-btn:hover {
+  background: #A6032F;
+  color: white;
+}
+
+.left .digit-button:last-child {
+  width: 100%;
+}

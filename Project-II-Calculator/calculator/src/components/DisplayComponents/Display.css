@@ -1,6 +1,19 @@
 .calculator {
-  border: 1px solid #F2F2F2;
-  border-radius: 10px;
-  height: 400px;
   width: 350px;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container .left {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.button-container .right {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
 }

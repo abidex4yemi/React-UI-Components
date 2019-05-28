@@ -2,9 +2,9 @@ import React from 'react';
 import './Button.css';
 
 export const ActionButton = props => {
-	const { buttonStyle, buttonText, buttonValue } = props;
+	const { buttonText } = props;
 	return (
-		<button style={buttonStyle} data-value={buttonValue}>
+		<button className="action-btn btn" type="button">
 			{buttonText}
 		</button>
 	);
