@@ -15,7 +15,7 @@ export class App extends Component {
 
 		return (
 			<React.Fragment>
-				<header class="header">
+				<header className="header">
 					<h3>Welcome to React Calculator</h3>
 				</header>
 
