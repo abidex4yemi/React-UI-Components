@@ -16,7 +16,9 @@ export class App extends Component {
 		return (
 			<React.Fragment>
 				<header className="header">
-					<h3>Welcome to React Calculator</h3>
+					<div className="container">
+						<h1>Welcome to React Calculator</h1>
+					</div>
 				</header>
 
 				<main>
